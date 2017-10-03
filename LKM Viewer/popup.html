@@ -1,21 +1,39 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>ViewLKMKeys</title>
-        <script src="jquery-3.1.0.min.js"></script>
-        <script src="popup.js"></script>
-        <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
-  </head>
-  <style>
+<head>
+    <title>ViewLKMKeys</title>
+    <script src="jquery-3.1.0.min.js"></script>
+    <script src="popup.js"></script>
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+</head>
+<style>
     body {
-    min-width:750px;
-    min-height:750px;
-}
-  </style>
-  <body>
-    
-        <input type="submit" id="btnView" value="Display LKM Keys and Text"/>
-        <br/>
-        <div id="tblLKMKeyValues"></div>
-  </body>
+        min-width: 400px;
+        min-height: 50px;
+    }
+
+    button {
+        padding: 40px;
+        border-spacing: 10px 50px;
+    }
+
+    td {
+        padding: 20px;
+    }
+</style>
+<body>
+    <br />
+    <table>
+        <tr>
+            <td>
+                <input type="submit" id="btnLKMView" value="View LKM Mode" />
+            </td>
+            <td><input type="submit" id="btnNormalView" value="View Normal Mode" /></td>
+        </tr>
+    </table>
+
+    <br />
+    <br />
+    <br />
+</body>
 </html>
