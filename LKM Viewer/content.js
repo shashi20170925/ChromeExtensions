@@ -19,6 +19,8 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
             var lkmObject = {};
             lkmObject[lkmKey] = lkmText;
             lkmArray.push(lkmObject);
+            $(this).attr('style', 'background-color:yellow');
+            //$(this).css("background-color:blue;");
             $(this).html($(this)[0].id.replace("LKMKEY_", ""));
         });
         //  sendResponse(returnTable);
@@ -27,6 +29,7 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
         $(".portalapp").find("span[id*='LKMKEY_']").each(function () {
             var tempText = FindArrayElementValueByID($(this)[0].id);
             if (tempText != '' && tempText != undefined) {
+                $(this).attr('style', '');
                 $(this).html(tempText);
             }
         });
