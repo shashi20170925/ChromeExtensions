@@ -1,39 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>ViewLKMKeys</title>
+    <title>View LKM Keys</title>
     <script src="jquery-3.1.0.min.js"></script>
     <script src="popup.js"></script>
     <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+
 </head>
 <style>
     body {
         min-width: 300px;
-        min-height: 20px;
+        min-height: 100px;
+        background-color:lightgray;
     }
-
-    button {
-        padding: 30px;
-        border-spacing: 10px 30px;
+    .container {
+        padding-top:40px;
     }
+    .borderless td, .borderless th,  .borderless tbody, .borderless tbody ,.borderless table ,.borderless tr{
+    border: none;
+    border-color:none;
+}
 
     td {
-        padding: 15px;
+        padding: 0px;
     }
 </style>
 <body>
-    <br />
-    <table>
-        <tr>
-            <td>
-                <input type="submit" id="btnLKMView" value="View LKM Mode" />
-            </td>
-            <td><input type="submit" id="btnNormalView" value="View Normal Mode" /></td>
-        </tr>
-    </table>
 
-    <br />
-    <br />
-    <br />
+  <div class="container">
+           <table class="table borderless">
+             
+              <tr>
+                  <td>
+                      <input class="btn btn-success" type="submit" id="btnLKMView" value="LKM Mode" />
+                  </td>
+                  <td><input class="btn btn-primary" type="submit" id="btnNormalView" value="Normal Mode" /></td>
+              </tr>
+          </table>
+      <br />
+  </div>
 </body>
 </html>
